@@ -1,0 +1,74 @@
+﻿<Window x:Class="Qand_a.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Qand_a"
+        mc:Ignorable="d"
+        Title="MainWindow" Background="LightCyan"   Height="927" Margin="10,10,20,20" Width="837">
+
+
+   
+        
+   
+    
+    <StackPanel Orientation="Vertical" >
+        <Label Content=" WELCOME TO FAQ" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize=" 30" Foreground="Purple" FontFamily=" times new roman" FontWeight="UltraBold"   ></Label>
+
+
+        
+        <TextBlock Text="Q1 :what is CPU?" FontSize="20" FontWeight="Bold" ></TextBlock>
+        <CheckBox Content=" Computer periperial unit" Checked="CheckBox_Checked_1"  Tag="0 "  FontSize=" 15" FontWeight="Bold"  ></CheckBox>
+        <CheckBox Content=" Central processing  unit" Checked="CheckBox_Checked_1" Tag="10 " FontSize=" 15" FontWeight="Bold"  ></CheckBox>
+        <CheckBox Content=" Common periperial unit" Checked="CheckBox_Checked_1"  Tag="0 " FontSize=" 15" FontWeight="Bold"   ></CheckBox>
+        <CheckBox Content=" Common processing unit" Checked="CheckBox_Checked_1"  Tag="0 " FontSize=" 15" FontWeight="Bold"   ></CheckBox>
+        <Label x:Name="Lbl2"></Label>
+        
+
+            <StackPanel Orientation="Vertical" >
+            <TextBlock Text="Q2 :which Application is used For Creatingand Editing Videos?" FontSize="20" FontWeight="Bold"></TextBlock>
+            <CheckBox Content=" Photoshop"     Tag="0"  Checked="CheckBox_Checked" FontSize=" 15" FontWeight="Bold"     ></CheckBox>
+            <CheckBox Content=" Microsoft Excel"   Tag=" 0" Checked="CheckBox_Checked"  FontSize=" 15" FontWeight="Bold"     ></CheckBox>
+            <CheckBox Content=" Microsoft Word" Tag="10"  Checked="CheckBox_Checked"  FontSize=" 15" FontWeight="Bold"    ></CheckBox>
+            <CheckBox Content=" Adobe Illustrator" Tag="0" Checked="CheckBox_Checked"  FontSize=" 15" FontWeight="Bold"     ></CheckBox>
+            <Label x:Name="lbl1"></Label>
+         
+
+        </StackPanel>     
+            <StackPanel Orientation="Vertical" >
+            <TextBlock Text="Q3 :which is Commonly Used for Sending and Receiving Emails?" FontSize="20" FontWeight="Bold"  ></TextBlock>
+            <CheckBox Content=" Microsoft Word" Checked="CheckBox_Checked_2"  FontSize=" 15" FontWeight="Bold"   Tag=" 0"></CheckBox>
+            <CheckBox Content="Skype" Checked="CheckBox_Checked_2" FontSize=" 15" FontWeight="Bold"   Tag=" 0"></CheckBox>
+            <CheckBox Content="Whatsapp " Checked="CheckBox_Checked_2" FontSize=" 15" FontWeight="Bold"   Tag=" 0"></CheckBox>
+            <CheckBox Content=" Microsoft Outlook" Checked="CheckBox_Checked_2" FontSize=" 15" FontWeight="Bold"   Tag=" 10" ></CheckBox>
+            <Label x:Name="lbl3"></Label>
+        
+        </StackPanel>
+        
+        <StackPanel Orientation="Vertical" >
+            <TextBlock Text="Q4:what is Primary Function Of a web Browser?" FontSize="20" FontWeight="Bold"></TextBlock>
+            <CheckBox Content="Playing Music " Checked="CheckBox_Checked_3"  FontSize=" 15" FontWeight="Bold"   Tag=" 0"></CheckBox>
+            <CheckBox Content="editing Videos " Checked="CheckBox_Checked_3"  FontSize=" 15" FontWeight="Bold"   Tag=" 0"></CheckBox>
+            <CheckBox Content="Browsing The Internet " Checked="CheckBox_Checked_3" FontSize=" 15" FontWeight="Bold"   Tag=" 10" ></CheckBox>
+            <CheckBox Content="Creating Spreet Sheets " Checked="CheckBox_Checked_3" FontSize=" 15" FontWeight="Bold"   Tag=" 0"></CheckBox>
+            <Label x:Name="lbl4"></Label>
+       
+        </StackPanel>
+        <StackPanel Orientation="Vertical" >
+            <TextBlock Text="Q5:which Application  is used to Organize and Manage Tabular Data?" FontSize="20" FontWeight="Bold"></TextBlock>
+            <CheckBox Content="Microsoft Excel " Checked="CheckBox_Checked_4" FontSize=" 15" FontWeight="Bold"   Tag=" 10"></CheckBox>
+            <CheckBox Content="Adobe Acrobat " Checked="CheckBox_Checked_4" FontSize=" 15" FontWeight="Bold"   Tag=" 0"></CheckBox>
+            <CheckBox Content="GarageBand " Checked="CheckBox_Checked_4" FontSize=" 15" FontWeight="Bold"   Tag=" 0"></CheckBox>
+            <CheckBox Content="Final Cut Pro " Checked="CheckBox_Checked_4" FontSize=" 15" FontWeight="Bold"   Tag=" 0"></CheckBox>
+            <Label x:Name="lbl5"></Label>
+            <Button Content=" Submit" FontWeight="UltraBold" Background="Purple"  Click="Button_Click" ></Button>
+        </StackPanel>
+
+
+
+
+
+
+    </StackPanel>
+   
+</Window>

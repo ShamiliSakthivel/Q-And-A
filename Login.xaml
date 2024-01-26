@@ -1,0 +1,38 @@
+﻿<Window x:Class="Qand_a.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Qand_a"
+        mc:Ignorable="d"
+        Title="Login"  HorizontalAlignment="Center"  Height="250" Width="300">
+    <StackPanel>
+        <StackPanel Orientation="Horizontal" >
+            <Label x:Name="lblusername" Width="120" Height="29" Margin=" 10,5,5,10" Padding=" 10,5" Target="{Binding ElementName=txtusername}">
+                <Label.Content>
+                    <StackPanel Orientation="Horizontal" >
+                        <Image Source="https://cdn4.iconfinder.com/data/icons/e-commerce-icon-set/48/Username_2-512.png " Width="30" Height="28" />
+                        <AccessText Text="    _Name"></AccessText>
+                    </StackPanel>
+                </Label.Content>
+            </Label>
+            <TextBox x:Name="txtusername" Width="100" Height="30" Margin=" 10,5,5,10" Padding=" 10,5" TabIndex="15" ></TextBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" >
+            <Label x:Name="lblpassword" Width=" 120" Height="29" Margin=" 10,5,5,10" Padding=" 10,5" Target="{Binding ElementName=txtpassword}">
+                <Label.Content >
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="https://cdn2.iconfinder.com/data/icons/buno-ui-interface/32/__lock_password_secure-512.png" Width="30" Height="30" HorizontalAlignment="Left"></Image>
+                        <AccessText Text="_Password"></AccessText>
+                    </StackPanel>
+                </Label.Content>
+            </Label>
+            <PasswordBox x:Name="pwdpassword" Width=" 100" Height=" 30" Margin=" 10,5,5,10" PasswordChar="*"></PasswordBox>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center"  >
+            <Button x:Name ="btnlogin" Foreground="Red"  Margin=" 10,25,10,10"  Padding=" 10,5,10,10" Click="btnlogin_Click"    Content="Login"></Button>
+        </StackPanel>
+        <Label x:Name="lblnumber"></Label>
+    </StackPanel>
+</Window>
